@@ -7,14 +7,14 @@
     width: 4rem;
   }
 
-  .addBtn a {
+  .addBtn div {
     text-decoration: none;
     font-weight: bold;
     color: rgb(80, 9, 105);
   }
   
-  .addBtn a:hover,
-  .addBtn a:active,
-  .addBtn a.active {
+  .addBtn div:hover,
+  .addBtn div:active,
+  .addBtn div.active {
     color: rgb(231, 227, 240);
   }
