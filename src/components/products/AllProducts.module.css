@@ -1,0 +1,16 @@
+.theProducts {
+    text-align: center;
+    width: 98%;
+    margin: auto;
+    margin-top: 1rem;
+    position: relative;
+    background-color: rgb(80, 9, 105);
+    border-radius: 6px;
+    padding: 1rem;
+  }
+  
+  .theProducts h2 {
+    font-size: 1.5rem;
+    color: rgb(231, 227, 240);
+    margin-top: 0rem;
+  }

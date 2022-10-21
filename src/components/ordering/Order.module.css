@@ -1,0 +1,49 @@
+.theOrder {
+    text-align: center;
+    width: 98%;
+    height: 28rem;
+    margin: auto;
+    margin-top: 1rem;
+    position: relative;
+    background-color: rgb(80, 9, 105);
+    border-radius: 6px;
+    padding: 1rem;
+  }
+
+  .theOrder h1 {
+    font-size: 1.7rem;
+    color: rgb(231, 227, 240);
+    margin-bottom: 4rem;
+  }
+  
+  .theOrder h2 {
+    font-size: 1.5rem;
+    color: rgb(231, 227, 240);
+  }
+
+  .actions {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid rgb(80, 9, 105);
+    padding: 0.5rem 1.3rem;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+
+  .actions .button {
+    background-color: rgb(171, 123, 224);
+    color: rgb(80, 9, 105);
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: rgb(147, 46, 152);
+    border-color: rgb(147, 46, 152);
+    color: rgb(227, 240, 230);
+  }

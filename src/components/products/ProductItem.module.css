@@ -1,0 +1,71 @@
+.item {
+    margin: 1rem auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgb(53, 2, 88);
+    border-radius: 6px;
+    background-color: rgb(231, 227, 240);
+    max-width: 40rem;
+  }
+  
+  .item figure {
+    margin: 0;
+    width: 13rem;
+  }
+
+  .item p {
+    margin: 0;
+    margin-bottom: 0.25rem;
+  }
+  
+  .description {
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(80, 9, 105);;
+  }
+
+  .price {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2rem;
+    color: rgb(80, 9, 105);
+  }
+
+  .item a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(80, 9, 105);
+  }
+  
+  .item a:hover,
+  .item a:active,
+  .item a.active {
+    color: rgb(231, 227, 240);
+  }
+
+  .productBtn {
+    font-size: 1.5rem;
+    text-align: center;
+    
+    background-color: rgb(171, 123, 224);
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+  }
+
+  .addBtn {
+    background-color: rgb(171, 123, 224);
+    border-color: rgb(171, 123, 224);
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    width: 4rem;
+  }
+
+
+
+
+  

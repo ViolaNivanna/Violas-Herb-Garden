@@ -1,0 +1,88 @@
+.form {
+  align-items: center;
+  width: 98%;
+  max-width: 20rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow: auto;
+  position: relative;
+  background-color: rgb(80, 9, 105); 
+  }
+
+  .adress {
+    font-size: 1.5rem;
+    color: rgb(147, 46, 152);
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .pay {
+    font-size: 1.5rem;
+    color: rgb(147, 46, 152);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  .control {
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: rgb(231, 227, 240);
+  }
+
+  .control label {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    display: block;
+    color: rgb(171, 123, 224);
+  }
+  
+  .control input {
+    font: inherit;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 6px;
+    width: 20rem;
+    max-width: 100%;
+    color: rgb(0, 0, 0);
+  }
+
+  .actions {
+    text-align: right;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid rgb(80, 9, 105);
+    padding: 0.5rem 1.3rem;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+
+  .actions .button {
+    background-color: rgb(171, 123, 224);
+    color: rgb(80, 9, 105);
+    
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: rgb(147, 46, 152);
+    border-color: rgb(147, 46, 152);
+    color: rgb(227, 240, 230);
+  }
+
+  /* If input is invlaid. Does not work right now*/
+  .invalid label {
+    color: rgb(207, 0, 28);
+  }
+  
+  .invalid input {
+    border-color: rgb(207, 0, 28);
+    background-color: rgb(255, 198, 205);
+  }
