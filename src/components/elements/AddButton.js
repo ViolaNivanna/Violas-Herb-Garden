@@ -3,7 +3,7 @@ import classes from "./AddButton.module.css";
 const AddButton = () => {
     return (
         <button className={classes.addBtn}>
-            <div>+ Add</div>
+            <div>+ Adda badda</div>
         </button>
     );
 };
