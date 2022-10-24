@@ -6,6 +6,7 @@ ProductForm mottok derfor en fixed $ pris
 */
 
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 import ProductForm from "./ProductForm";
 import classes from "./ViewedProduct.module.css";
@@ -45,7 +46,9 @@ const ViewedProduct = (props) => {
                     {props.info}
                     <p className={classes.precautions}>Precautions:</p>
                     {props.precautions}
-                    <p className={classes.credit}>Christian Bixler</p>
+                    <p>
+                        <a href="https://hellopoetry.com/christian-l-bixler/">Christian Bixler</a>
+                    </p>
                 </p>
             </figure> 
         </section>

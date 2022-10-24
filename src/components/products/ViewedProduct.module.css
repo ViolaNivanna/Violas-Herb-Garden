@@ -53,12 +53,6 @@
     margin-bottom: 0.3rem;
   }
 
-  .credit {
-    font-size: 0.8rem;
-    font-style: italic;
-    margin-top: 0.5rem;
-  }
-
   .price {
     font-size: 1.2rem;
     margin-top: 0rem;
@@ -103,11 +97,14 @@
   .details a {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(80, 9, 105);
+    font-size: 0.8rem;
+    font-style: italic;
+    color: rgb(171, 123, 224);
+    
   }
   
   .details a:hover,
   .details a:active,
   .details a.active {
-    color: rgb(231, 227, 240);
+    text-decoration: underline;
   }

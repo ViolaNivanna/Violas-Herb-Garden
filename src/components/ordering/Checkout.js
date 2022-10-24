@@ -10,6 +10,7 @@ const Checkout = (props) => {
 
     const [inputValidity, setInputValidity] = useState({
         name: true,
+        email: true,
         country: true,
         street: true,
         city: true,
@@ -18,6 +19,7 @@ const Checkout = (props) => {
     });
 
     const nameInputRef = useRef();
+    const emailInputRef = useRef();
     const countryInputRef = useRef();
     const streetInputRef = useRef();
     const cityInputRef = useRef();
@@ -28,6 +30,7 @@ const Checkout = (props) => {
         event.preventDefault();
 
         const enteredName = nameInputRef.current.value;
+        const enteredEmail = emailInputRef.current.value;
         const enteredCountry = countryInputRef.current.value;
         const enteredStreet = streetInputRef.current.value;
         const enteredCity = cityInputRef.current.value;
@@ -35,6 +38,7 @@ const Checkout = (props) => {
         const enteredZip = zipInputRef.current.value;
 
         const enteredNameIsValid = !isEmpty(enteredName);
+        const enteredEmailIsValid = !isEmpty(enteredEmail);
         const enteredCountryIsValid = !isEmpty(enteredCountry);
         const enteredStreetIsValid = !isEmpty(enteredStreet);
         const enteredCityIsValid = !isEmpty(enteredCity);
@@ -43,6 +47,7 @@ const Checkout = (props) => {
 
         setInputValidity({
             name: enteredNameIsValid,
+            email: enteredEmailIsValid,
             country: enteredCountryIsValid,
             street: enteredStreetIsValid,
             city: enteredCityIsValid,
@@ -52,6 +57,7 @@ const Checkout = (props) => {
 
         const formIsValid = 
             enteredNameIsValid &&
+            enteredEmailIsValid &&
             enteredCountryIsValid &&
             enteredStreetIsValid &&
             enteredCityIsValid &&
@@ -65,6 +71,9 @@ const Checkout = (props) => {
 
     const nameClasseControl = `${classes.control} ${
         inputValidity.name ? '' : classes.invalid
+    }`;
+    const emailClasseControl = `${classes.control} ${
+        inputValidity.email ? '' : classes.invalid
     }`;
     const countryClasseControl = `${classes.control} ${
         inputValidity.country ? '' : classes.invalid
@@ -89,6 +98,12 @@ const Checkout = (props) => {
                 <label htmlFor='name'>Full name</label>
                 <input type='text' id='name' ref={nameInputRef}/>
                 {!inputValidity.name && <p>Please enter a valid name</p>}
+            </div>
+
+            <div className={emailClasseControl}>
+                <label htmlFor='email'>Email</label>
+                <input type='text' id='email' ref={nameInputRef}/>
+                {!inputValidity.email && <p>Please enter a valid email</p>}
             </div>
 
             <div className={countryClasseControl}>
