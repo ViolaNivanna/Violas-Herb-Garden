@@ -6,7 +6,6 @@ ProductForm mottok derfor en fixed $ pris
 */
 
 import { useContext } from "react";
-import { Link } from "react-router-dom";
 
 import ProductForm from "./ProductForm";
 import classes from "./ViewedProduct.module.css";
